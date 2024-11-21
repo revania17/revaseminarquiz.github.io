@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Seminar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f3d9e5, #f8a8c3);
+            color: #333;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #ff7a8b, #ff98b6);
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .nav-link:hover {
+            color: #ff7a8b !important;
+        }
+
+        #description {
+            background: linear-gradient(to bottom, #f3d9e5, #ffb3d9);
+            color: #333;
+        }
+
+        #learning-points {
+            background: linear-gradient(to right, #ff7a8b, #ff98b6);
+            color: #fff;
+        }
+
+        .card {
+            border: none;
+            background: linear-gradient(135deg, #f8a8c3, #f3d9e5);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .speaker img {
+            max-width: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .speaker img:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #ff7a8b, #f8a8c3);
+            border: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #f8a8c3, #ff7a8b);
+        }
+
+        footer {
+            background: linear-gradient(45deg, #ff7a8b, #ff98b6);
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        footer a:hover {
+            color: #ff7a8b;
+        }
+
+        @media (max-width: 576px) {
+            .speaker img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seminar Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#description">Deskripsi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speakers">Pembicara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">Pendaftaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Deskripsi -->
+    <section id="description" class="py-5 text-center">
+        <div class="container">
+            <h1 class="mb-4">Transformasi Digital: Teknologi Masa Depan dan Peluang Karir di Era Modern</h1>
+            <h2 class="mb-4">Tujuan Seminar</h2>
+            <p> Dalam dunia yang terus berkembang pesat, teknologi menjadi tulang punggung transformasi global. Seminar
+                online ini bertujuan untuk mengeksplorasi tren teknologi terkini, seperti kecerdasan buatan (AI),
+                blockchain, Internet of Things (IoT), dan cloud computing. Kami menghadirkan pembicara berpengalaman
+                dari berbagai bidang teknologi untuk berbagi wawasan mendalam, memberikan inspirasi, dan mempersiapkan
+                Anda menghadapi tantangan serta peluang di era digital. Seminar ini cocok untuk mahasiswa, profesional,
+                dan siapa saja yang tertarik untuk memahami bagaimana teknologi dapat mengubah kehidupan sehari-hari
+                serta membuka peluang karir baru.</p>
+        </div>
+    </section>
+
+   <!-- Apa yang Akan Anda Pelajari -->
+   <section id="learning-points" class="py-5 text-center">
+    <div class="container">
+        <h2 class="mb-4"> Topik apa yang akan di pelajari?</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <img src="tren teknologi.webp" alt="Tech Trends" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Tren Teknologi Terkini</h5>
+                        <p class="card-text">Pelajari inovasi terbaru dalam teknologi dan bagaimana pengaruhnya
+                            terhadap berbagai industri di dunia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <img src="pemanfaatan.webp" alt="Strategies" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Strategi Memanfaatkan Teknologi</h5>
+                        <p class="card-text">Temukan cara memanfaatkan teknologi untuk mempercepat pengembangan
+                            karir Anda dan meningkatkan bisnis.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <img src="keterampilan.webp" alt="Skills" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Keterampilan Era Digital</h5>
+                        <p class="card-text">Pelajari keterampilan penting untuk tetap relevan dan sukses di era
+                            transformasi digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pembicara -->
+    <section id="speakers" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Pembicara</h2>
+            <div class="row justify-content-center"> <!-- This ensures the row is centered -->
+                <div class="col-md-4 col-sm-6 speaker mb-4 text-center"> <!-- Ensure each speaker is centered -->
+                    <img src="xavier.jpg" class="img-fluid" alt="Speaker 1">
+                    <h5 class="mt-3">XAVIERA PUTI</h5>
+                    <p>Content Creator</p>
+                </div>
+                <div class="col-md-4 col-sm-6 speaker mb-4 text-center"> <!-- Ensure each speaker is centered -->
+                    <img src="dea.jpg" class="img-fluid" alt="Speaker 2">
+                    <h5 class="mt-3">DEA AFRIZAL</h5>
+                    <p>Content Creator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendaftaran -->
+    <section id="registration" class="py-5 text-center">
+        <div class="container">
+            <h2 class="text-center mb-4">Formulir Pendaftaran</h2>
+            <form id="registrationForm" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <button type="button" class="btn btn-primary w-100" onclick="validateForm()">Daftar Sekarang</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="Kontak" class="py-5 bg-light">
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <h2 class="mb-2">Hubungi Kami </h2>
+                <div class="d-flex justify-content-center align-items-center">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/vaniarch__?igsh=NDloOHhobmY1d2dz" target="_blank" class="text-white mx-3">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/085721368639" target="_blank" class="text-white mx-3">
+                        <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+                <p class="mt-3">© 2024 Seminar Online Teknologi. Semua Hak Dilindungi.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Icons CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+        <script>
+            function validateForm() {
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                if (!name) {
+                    alert('Nama harus diisi!');
+                    return;
+                }
+                if (!email || !/\S+@\S+\.\S+/.test(email)) {
+                    alert('Email tidak valid!');
+                    return;
+                }
+                alert('Pendaftaran berhasil!');
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
